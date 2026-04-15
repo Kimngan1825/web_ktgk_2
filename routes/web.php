@@ -35,9 +35,9 @@ Route::post('/gio-hang/dat-hang', [Controller4::class, 'checkout'])->name('cart.
 
 require __DIR__.'/auth.php';
 
-// Trang chi tiết phim
+// Trang chi tiết 
 Route::get('/chitiet/{id}', [Controller3::class, 'chitiet'])->name('caycanh.chitiet');
 Route::post('/add-to-cart', [Controller3::class, 'addToCart'])->name('cart.add');
 // Câu 8: Các route cho thêm sản phẩm 
-Route::get('/quan-ly/them-san-pham', [Controller8::class, 'create'])->name('product.create');
-Route::post('/quan-ly/luu-san-pham', [Controller8::class, 'store'])->name('product.store');
+Route::get('/quan-ly/them-san-pham', [Controller8::class, 'create'])->name('caycanh.create');
+Route::post('/quan-ly/luu-san-pham', [Controller8::class, 'store'])->name('caycanh.store');

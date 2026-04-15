@@ -12,7 +12,7 @@
             
             @forelse($sanPhams as $item)
                 <div class="cay-canh pb-2">
-                    <a href="#">
+                    <a href="{{ route('caycanh.chitiet', $item->id) }}">
                         <img src="{{ asset('storage/image/' . $item->hinh_anh) }}" alt="{{ $item->ten_san_pham }}" style="width: 100%; height: 220px; object-fit: cover;">
                         
                         <div class="cay-canh-info p-2" style="display: block !important; text-align: center;">

@@ -22,11 +22,11 @@
             <tbody>
                 @php $total = 0; @endphp
                 @foreach($cart as $item)
-                    @php $total += $item['don_gia'] * $item['so_luong']; @endphp
+                    @php $total += $item['gia_ban'] * $item['so_luong']; @endphp
                     <tr>
                         <td style="border: 1px solid #ddd; padding: 8px;">{{ $item['ten_san_pham'] }}</td>
                         <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">{{ $item['so_luong'] }}</td>
-                        <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">{{ number_format($item['don_gia'], 0, ',', '.') }}đ</td>
+                        <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">{{ number_format($item['gia_ban'], 0, ',', '.') }}đ</td>
                     </tr>
                 @endforeach
             </tbody>

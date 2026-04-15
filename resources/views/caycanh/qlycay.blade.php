@@ -35,7 +35,7 @@
                     </td>
                     <td class="text-center">
                         <div class="d-flex justify-content-center">
-                            <a href="#" class="btn btn-primary btn-sm mr-1">Xem</a>
+                            <a href="{{ route('caycanh.chitiet', $item->id) }}" class="btn btn-primary btn-sm mr-1">Xem</a>
                             <form action="{{ route('admin.destroy', $item->id) }}" method="POST" onsubmit="return confirm('Xóa sản phẩm này?')">
                                 @csrf
                                 <button type="submit" class="btn btn-danger btn-sm">Xóa</button>

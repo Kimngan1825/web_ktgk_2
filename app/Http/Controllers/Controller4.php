@@ -20,7 +20,7 @@ class Controller4 extends Controller
 
         // Tính tổng tiền
         foreach ($cart as $item) {
-            $total += $item['don_gia'] * $item['so_luong'];
+            $total += $item['gia_ban'] * $item['so_luong'];
         }
 
         return view('caycanh.cart', compact('cart', 'total'));
@@ -67,7 +67,7 @@ class Controller4 extends Controller
                     'ma_don_hang' => $maDonHang,
                     'id_san_pham' => $id_san_pham,
                     'so_luong' => $item['so_luong'],
-                    'don_gia' => $item['don_gia']
+                    'don_gia' => $item['gia_ban']
                 ]);
             }
 
