@@ -54,7 +54,7 @@
                         <td>{{ $stt++ }}</td>
                         <td class="text-left">{{ $item['ten_san_pham'] }}</td>
                         <td>{{ $item['so_luong'] }}</td>
-                        <td>{{ number_format($item['don_gia'], 0, ',', '.') }}đ</td>
+                        <td>{{ number_format($item['gia_ban'], 0, ',', '.') }}đ</td>
                         <td>
                             <a href="{{ route('cart.remove', $id) }}" class="btn-delete" onclick="return confirm('Xác nhận xóa sản phẩm này?');">Xóa</a>
                         </td>

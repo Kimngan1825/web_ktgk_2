@@ -44,7 +44,7 @@
     <div class="product-grid">
         @forelse($products as $product)
             <div class="product-item">
-                <a href="#" style="text-decoration: none; color: inherit;">
+                <a href="{{ route('caycanh.chitiet', $product->id) }}" style="text-decoration: none; color: inherit;">
                     <img src="{{ asset('storage/image/' . $product->hinh_anh) }}" 
                          alt="{{ $product->ten_san_pham }}" 
                          onerror="this.onerror=null; this.src='https://via.placeholder.com/200x200?text=No+Image'">

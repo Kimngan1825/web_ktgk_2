@@ -19,7 +19,7 @@
     <div class="form-container">
         <h2 class="form-title">THÊM</h2>
 
-        <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('caycanh.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
             <div class="form-group">
